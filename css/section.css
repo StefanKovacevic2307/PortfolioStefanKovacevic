@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.portfolio {
+	background: linear-gradient(to bottom, #0a0039, #000522);
+	color: #ffd700;
+	padding: 50px 0;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.review {
+	font-size: 1.2rem;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.profile-picture {
+	border: 5px solid #ffd700;
+	width: 250px;
+	height: 250px;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.profile-picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	background-color: #ffd700;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-top: 20px;
+	display: inline-block;
+	transition: background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: #047c44;
+}
+/* Skills sekcija */
+.skills-section {
+	background: linear-gradient(to top, #0a0039, #000522);
+	padding: 40px 20px;
+	text-align: center;
+	color: #ffd700;
+}
+
+.skills-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.skills-title::after {
+	content: "";
+	display: block;
+	width: 60%;
+	height: 6px;
+	background: #ffd700;
+	margin: 10px auto 0 auto;
+	border-radius: 5px;
+	animation: scaleLine 1s ease-in-out;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.skill-card {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	padding: 20px;
+	width: 100%;
+	max-width: 300px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	color: #ffd700;
+}
+
+.skill-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon {
+	font-size: 4rem;
+	margin-bottom: 15px;
+	color: #ffd700;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-name {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.skill-description {
+	font-size: 1rem;
+	color: #fffefe;
+	opacity: 0.8;
+	margin-bottom: 15px;
+}
+
+/* Progres Bar */
+.skill-progress {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	height: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.skill-progress span {
+	display: block;
+	height: 100%;
+	background: #ffd700;
+	width: 0%;
+	transition: width 1s ease-in-out;
+}
+.skill-percentage {
+	margin-top: 5px;
+	font-size: 1rem;
+	color: #ffd700;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	text-align: right;
+}
+/* Aktivacija nivoa veštine */
+.skill-card[data-skill="html"] .skill-progress span {
+	width: 90%;
+}
+
+.skill-card[data-skill="css"] .skill-progress span {
+	width: 80%;
+}
+
+.skill-card[data-skill="php"] .skill-progress span {
+	width: 75%;
+}
+
+.skill-card[data-skill="js"] .skill-progress span {
+	width: 70%;
+}

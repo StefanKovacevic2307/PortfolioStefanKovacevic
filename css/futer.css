@@ -1,0 +1,53 @@
+footer {
+	background: linear-gradient(to left, #d4af37, #0a0039);
+	color: #ffffff;
+}
+
+footer a {
+	color: #ffffff;
+	transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+	color: #f7d794;
+	text-decoration: underline;
+}
+
+footer h5 {
+	font-family: "Playfair Display", serif;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer ul li {
+	margin-bottom: 10px;
+}
+
+footer ul li i {
+	margin-right: 10px;
+}
+
+footer hr {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+footer .fab {
+	transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+footer .fab:hover {
+	transform: scale(1.2);
+	color: #ffd700;
+}
+
+.modal-content {
+	background: #0a0039;
+	color: #ffffff;
+}
+
+.modal-header .btn-close {
+	color: #ffffff;
+}
